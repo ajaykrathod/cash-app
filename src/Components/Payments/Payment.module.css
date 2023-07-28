@@ -1,0 +1,120 @@
+.container {
+    background: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.mobile {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    /* z-index: 2; */
+}
+
+.upper {
+    height: 53vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.infoSection {
+    width: 25vw;
+    height: 20vh;
+    margin: 20vh 0 0 17vw;
+    text-align: start;
+}
+
+.infoSection > h1 {
+    color: var(--cash-app-green, #00D54B);
+    font-family: 'Agrandir';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 100% */
+}
+
+.infoSection > p {
+    color: #000;
+    text-align: start;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: 0.3px;
+}
+
+.vector {
+    width: 100vw;
+    height: 45vh;
+    background-image: url('/public/assets/images/vector-hor.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.paycol {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.paycolright {
+    position: absolute;
+    bottom: 5vh;
+    right: 0;
+    z-index: 1;
+}
+
+.paycolbottom {
+    position: absolute;
+    bottom: 0;
+    right: 17vw;
+    z-index: 2;
+}
+
+.small {
+    position: relative;
+    bottom: 5vh;
+    right: 15vw;
+    z-index: 0;
+}
+.medium {
+    position: relative;
+    right: 10vw;
+    z-index: 1;
+}
+.mediumCenter {
+    position: relative;
+    right: 7vw;
+    z-index: 3;
+}
+
+.large{
+    position: relative;
+    bottom: 5vh;
+    right: 17vw;
+    z-index: 2;
+    
+}
+
+.smallCenter {
+    position: relative;
+    bottom: -5vh;
+    right:  5vw;
+    z-index: 3;
+}
+
+.colBetween {
+    position: absolute;
+    right: 17vw;
+    bottom: 20vh;
+    z-index: 2;
+
+}

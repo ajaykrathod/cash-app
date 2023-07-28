@@ -1,0 +1,8 @@
+/* Inside fonts/fonts.css */
+@font-face {
+    font-family: 'Agrandir';
+    src: url('./PPAgrandir-GrandHeavy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

@@ -1,0 +1,100 @@
+.container {
+    background: #000;
+    max-width: 100vw;
+    position: relative;
+    height: 100vh;
+}
+
+
+.mobile {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-55%, -25%);
+    z-index: 2;
+}
+
+.hand {
+    position: relative;
+    z-index: 3;
+    left: 65vh;
+    top: 10vh;
+}
+
+.card {
+    position: absolute;
+    z-index: 3;
+    right: 21vw;
+    top: 18vh;
+    margin-top: 10vh;
+}
+
+
+.infoSection {
+    width: 25vw;
+    height: 20vh;
+    margin: 0;
+    position: absolute;
+    top: 35vh;
+    left: 20vw;
+    /* padding: 20vh 0 0 17vw; */
+    text-align: start;
+}
+
+.infoSection > h1 {
+    color: var(--cash-app-green, #00D54B);
+    font-family: 'Agrandir';
+    font-size: 40px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 100% */
+}
+
+.infoSection > p {
+    color: #fff;
+    text-align: start;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: 0.3px;
+}
+
+
+
+.burger {
+    position: absolute;
+    z-index: 3;
+    right: 28vw;
+    top: 42vh;
+    margin-top: 10vh;
+}
+
+.can {
+    position: absolute;
+    z-index: 3;
+    right: 21vw;
+    top: 61vh;
+    margin-top: 10vh;
+}
+
+.shoe {
+    position: absolute;
+    z-index: 3;
+    right: 2vw;
+    bottom: 35vh;
+    /* margin-top: 10vh; */
+}
+
+.stairs1 {
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}
+.stairs2 {
+    height: 100vh;
+    position: absolute;
+    left: 0;
+}

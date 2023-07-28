@@ -1,0 +1,65 @@
+.container {
+    background: #000;
+    color: white;
+    background-image: url('/public/assets/images/lines.svg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cube {
+    position: absolute;
+    top: 7vh;
+    left: 25vw;
+}
+
+.cubes {
+    position: absolute;
+    bottom: 10vh;
+    left: 20vw;
+}
+
+.pillar {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    right: 30vw;
+}
+
+.stair {
+    position: absolute;
+    right: 10vw;
+    top: 10vh;
+}
+
+.heroHead {
+    text-align: center;
+    margin: 0;
+    font-family: 'Agrandir';
+    font-size:13.5em;
+    letter-spacing: -20px;
+    text-transform: uppercase;
+}
+
+.text {
+    margin: 11.7vh 3.3vw 0 0;
+    padding: 0;
+    z-index:4;
+}
+
+.mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.app {
+    margin: -11.8vh 0 0 1vw;
+    padding: 0;
+}
+
