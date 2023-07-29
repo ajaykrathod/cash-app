@@ -1,9 +1,7 @@
 .footer {
-    position: absolute;
-    bottom: 2vh;
-    left: 5vw;
+    margin:10vh 0 0 5vw;
     width: 90vw;
-    margin: 5vh auto auto auto;
+    height: 10vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -13,6 +11,9 @@
 
 .buttons,.darkButtons {
     display: flex;
+    z-index: 6;
+    width: 35vw;
+    justify-content: space-around;
 }
 
 .navigator {
@@ -28,10 +29,10 @@
     background: #000;
     color: #FFF;
     text-align: center;
-    width: 11vw;
+    width: 15vw;
     height: 5vh;
     padding: 25px 10px;
-    margin-right: 3vw;
+    /* margin-right: 3vw; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -40,6 +41,7 @@
     font-style: normal;
     font-weight: 800;
     line-height: 18px; 
+    z-index: 3;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
@@ -50,7 +52,7 @@
     background: #fff;
     color: #000;
     text-align: center;
-    width: 11vw;
+    width: 15vw;
     height: 5vh;
     padding: 25px 10px;
     margin-right: 3vw;
@@ -62,6 +64,7 @@
     font-style: normal;
     font-weight: 800;
     line-height: 18px; 
+    z-index: 3;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
@@ -75,6 +78,7 @@
     font-style: normal;
     font-weight: 700;
     margin-left: 15vw;
+    z-index: 6;
     line-height: 13px; /* 130% */
 }
 .darkText {
@@ -82,6 +86,7 @@
     color: #606060;
     font-family: Mulish;
     font-size: 10px;
+    z-index: 6;
     font-style: normal;
     font-weight: 700;
     line-height: 13px; /* 130% */
@@ -112,28 +117,38 @@
 }
 
 @media screen and (max-width:1100px) {
+    .footer {
+        height: 25vh;
+        margin-top: 7vh;
+    }
     .policyText,.darkText {
-        width: 40vw;
+        width: 30vw;
     }
 }
 
 @media screen and (max-width:700px) {
+    .footer {
+        align-items: center;
+        /* width: 90 */
+        margin-top: 0;
+        height: 30vh;
+    }
     .policyText,.darkText {
-        width: 50vw;
+        width: 40vw;
     }
     .buttons,.darkButtons {
         flex-direction: column;
-        width: 30vw;
-        margin-right: 5vw;
+        width: 35vw;
+        height: 17vh;
+        margin: 0;
     }
     .buttons button, .darkButtons button {
         width: 30vw;
-    }
-    .footer {
-        align-items: center;
+        height: 8vh;
     }
     .icons {
-        width: 100vw;
+        margin-top: -7vh;
+        width: 17vw;
         display: flex;
         align-items: center;
         justify-content: space-between;

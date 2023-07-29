@@ -11,7 +11,7 @@
     list-style: none;
     display: inline-flex;
     align-items: center;
-    gap:20px;
+    gap:1vw;
 }
 
 
@@ -79,10 +79,8 @@
     text-decoration: none;
     color: #FFF;
     font-family: 'Agrandir';
-    font-size: 12px;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 18px; /* 150% */
-    letter-spacing: 0.5px;
     text-transform: uppercase;
 }

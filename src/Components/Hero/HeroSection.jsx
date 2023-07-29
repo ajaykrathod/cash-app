@@ -18,12 +18,12 @@ function HeroSection() {
         <img src={'./assets/images/intro-stairs 1.png'} className={heroStyles.stair}/>
         <img src={'./assets/images/intro-cubes 1.png'} className={heroStyles.cubes}/>
         <div className={heroStyles.text}>
-          <div className={`${heroStyles.heroHead}`}>
-            cash
+            <img src={'/assets/images/CASH.png'} className={heroStyles.cash}/>
+            <img src={'/assets/images/APP.png'} className={heroStyles.app}/>
+          {/* <div className={`${heroStyles.heroHead}`}>
           </div>
           <div className={`${heroStyles.heroHead} ${heroStyles.app}`}>
-            APP
-          </div>
+          </div> */}
           <img src={'/assets/images/intro-phone 1.png'} className={heroStyles.mobile}/>
         </div>
         <FixedFooter heroSection={true}/>

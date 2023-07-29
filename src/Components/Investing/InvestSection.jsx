@@ -1,6 +1,8 @@
 import React from "react";
 import investStyles from "./Invest.module.css";
 import FixedFooter from "../FixedFooter/FixedFooter";
+import FooterButtons from "../FixedFooter/FooterButtons";
+import FooterText from "../FixedFooter/FooterText";
 
 function InvestSection() {
   return (
@@ -36,7 +38,15 @@ function InvestSection() {
         
         <img src={"/assets/images/investing-graph-3 1.png"} className={investStyles.rightImage}/>
       </div>
-      <FixedFooter />
+        <div className={investStyles.footerMain}>
+          <FooterButtons heroSection={false} />
+          <FooterText heroSection={false} />
+          <div className={investStyles.icons}>
+            <img src={'./assets/images/twitchDark.svg'}/>
+            <img src={'./assets/images/twitterDark.svg'}/>
+            <img src={'./assets/images/instaDark.svg'}/>
+          </div>
+        </div>
     </section>
   );
 }
