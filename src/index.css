@@ -1,7 +1,7 @@
 /* Inside your global CSS file (e.g., index.css) */
 @import './fonts/fonts.css';
 
-body {
+html,body {
   margin: 0;
   padding: 0;
   max-width: 100vw;

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import './Navbar.css'
 function Navbar() {
@@ -7,7 +8,7 @@ function Navbar() {
   }
   return (
     <nav className={"navbar"}>
-          <img src={'./logo.svg'} className={"logo"}/>
+          <img alt='logo' src={'./logo.svg'} className={"logo"}/>
           <div className={"navbarToggle"} onClick={toggleMenu}>
             <div className={"bar"}></div>
             <div className={"bar"}></div>
@@ -15,34 +16,34 @@ function Navbar() {
           </div>
           <ul className={"navList"} id='navbarList'>
             <li>
-              <a href="">SIGN IN</a>
+              <a href="/" onClick={(e) => e.preventDefault()}>SIGN IN</a>
             </li>
             <li>
-              <a href="">LEGAL</a>
+              <a href="/" onClick={(e) => e.preventDefault()}>LEGAL</a>
             </li>
             <li>
-              <a href="">LICENCES</a>
+              <a href="/" onClick={(e) => e.preventDefault()}>LICENCES</a>
             </li>
             <li>
-              <a href="">SECURITY</a>
+              <a href="/" onClick={(e) => e.preventDefault()}>SECURITY</a>
             </li>
             <li>
-              <a href="">CAREERS</a>
+              <a href="/" onClick={(e) => e.preventDefault()}>CAREERS</a>
             </li>
             <li>
-              <a href="">PRESS</a>
+              <a href="/" onClick={(e) => e.preventDefault()}>PRESS</a>
             </li>
             <li>
-              <a href="">SUPPORT</a>
+              <a href="/" onClick={(e) => e.preventDefault()}>SUPPORT</a>
             </li>
             <li>
-              <a href="">STATUS</a>
+              <a href="/" onClick={(e) => e.preventDefault()}>STATUS</a>
             </li>
             <li>
-              <a href="">CODEBLOG</a>
+              <a href="/" onClick={(e) => e.preventDefault()}>CODEBLOG</a>
             </li>
           </ul>
-          <img src={'./eyeButton.svg'} className={"eye"}/>
+          <img alt='eye' src={'./eyeButton.svg'} className={"eye"}/>
         </nav>
   )
 }

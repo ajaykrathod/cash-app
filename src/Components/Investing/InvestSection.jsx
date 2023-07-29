@@ -1,6 +1,5 @@
 import React from "react";
 import investStyles from "./Invest.module.css";
-import FixedFooter from "../FixedFooter/FixedFooter";
 import FooterButtons from "../FixedFooter/FooterButtons";
 import FooterText from "../FixedFooter/FooterText";
 
@@ -28,23 +27,23 @@ function InvestSection() {
           </div>
         </div>
         <div className={investStyles.imageContainer}>
-            <img src={"/assets/images/investing-stocks.png"} />
-            <img src={"/assets/images/investing-bitcoin.png"} />
+            <img alt="stocks" src={"/assets/images/investing-stocks.png"} />
+            <img alt="bitcoin" src={"/assets/images/investing-bitcoin.png"} />
         </div>
       </div>
       <div className={investStyles.footer}>
-        <img src={"/assets/images/investing-graph-1.png"}  className={investStyles.leftImage}/>
-        <img src={"/assets/images/investing-graph-2.png"}  className={investStyles.graph}/>
+        <img alt="graph1" src={"/assets/images/investing-graph-1.png"}  className={investStyles.leftImage}/>
+        <img alt="graph2" src={"/assets/images/investing-graph-2.png"}  className={investStyles.graph}/>
         
-        <img src={"/assets/images/investing-graph-3 1.png"} className={investStyles.rightImage}/>
+        <img alt="graph3" src={"/assets/images/investing-graph-3 1.png"} className={investStyles.rightImage}/>
       </div>
         <div className={investStyles.footerMain}>
           <FooterButtons heroSection={false} />
           <FooterText heroSection={false} />
           <div className={investStyles.icons}>
-            <img src={'./assets/images/twitchDark.svg'}/>
-            <img src={'./assets/images/twitterDark.svg'}/>
-            <img src={'./assets/images/instaDark.svg'}/>
+            <img alt="twitch" src={'./assets/images/twitchDark.svg'}/>
+            <img alt="twitter" src={'./assets/images/twitterDark.svg'}/>
+            <img alt="instagram" src={'./assets/images/instaDark.svg'}/>
           </div>
         </div>
     </section>

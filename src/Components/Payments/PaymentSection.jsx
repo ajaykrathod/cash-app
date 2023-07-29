@@ -15,42 +15,52 @@ function PaymentSection() {
       </div>
       <div className={paymentStyle.vector}>
         <img
+          alt="mobile"
           src={"/assets/images/payments-phone 1.png"}
           className={paymentStyle.mobile}
         />
         <img
+          alt="pillar-medium"
           src={"/assets/images/payments-pillar-medium.png"}
           className={paymentStyle.colBetween}
         />
         <img
+          alt="column-bottom-left"
           src={"/assets/images/payments-column-bottom-left.png"}
           className={paymentStyle.paycol}
         />
         <img
+          alt="pillar-medium"
           src={"/assets/images/payments-pillar-medium.png"}
           className={paymentStyle.medium}
         />
         <img
+          alt="pillar-small"
           src={"/assets/images/payments-pillar-small.png"}
           className={paymentStyle.small}
         />
         <img
+          alt="pillar-medium"
           src={"/assets/images/payments-pillar-medium.png"}
           className={paymentStyle.mediumCenter}
         />
         <img
+          alt="pillar-medium"
           src={"/assets/images/payments-pillar-medium.png"}
           className={paymentStyle.smallCenter}
         />
         <img
+          alt="pillar-large"
           src={"/assets/images/payments-pillar-large.png"}
           className={paymentStyle.large}
         />
         <img
+          alt="payments-column"
           src={"/assets/images/payments-column-bottom-right.png"}
           className={paymentStyle.paycolright}
         />
         <img
+          alt="payments-column"
           src={"/assets/images/payments-column.png"}
           className={paymentStyle.paycolbottom}
         />

@@ -5,11 +5,11 @@ function FooterButtons({heroSection}) {
   return (
     <div className={heroSection ? footerStyles.buttons: footerStyles.darkButtons}>
         <button>
-          <img src={"./assets/images/appstore.png"} />
+          <img alt='Apple Store' src={"./assets/images/appstore.png"} />
           APP STORE
         </button>
         <button>
-          <img src={"./assets/images/playstore.png"} />
+          <img alt='Play Store' src={"./assets/images/playstore.png"} />
           GOOGLE PLAY
         </button>
       </div>

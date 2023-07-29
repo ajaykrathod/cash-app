@@ -5,7 +5,6 @@ import FixedFooter from '../FixedFooter/FixedFooter'
 function HeroSection() {
   const toggleMenu = (e) => {
     const navbarList = document.getElementById('navbarList');
-    console.log(e.target.className);
     if(navbarList.classList.contains('active') && e.target.className !== "navbarToggle" && e.target.className !== "bar"){
       navbarList.classList.remove('active')
     }
@@ -14,20 +13,16 @@ function HeroSection() {
   return (
     <section className={heroStyles.container} onClick={toggleMenu}>
         <Navbar/>
-        <img src={'./assets/images/intro-cube 1.png'} className={heroStyles.cube}/>
-        <img src={'./assets/images/intro-stairs 1.png'} className={heroStyles.stair}/>
-        <img src={'./assets/images/intro-cubes 1.png'} className={heroStyles.cubes}/>
+        <img alt='intro cube' src={'./assets/images/intro-cube 1.png'} className={heroStyles.cube}/>
+        <img alt='intro stairs' src={'./assets/images/intro-stairs 1.png'} className={heroStyles.stair}/>
+        <img alt='intro cubes' src={'./assets/images/intro-cubes 1.png'} className={heroStyles.cubes}/>
         <div className={heroStyles.text}>
-            <img src={'/assets/images/CASH.png'} className={heroStyles.cash}/>
-            <img src={'/assets/images/APP.png'} className={heroStyles.app}/>
-          {/* <div className={`${heroStyles.heroHead}`}>
-          </div>
-          <div className={`${heroStyles.heroHead} ${heroStyles.app}`}>
-          </div> */}
-          <img src={'/assets/images/intro-phone 1.png'} className={heroStyles.mobile}/>
+          <img alt='cash' src={'/assets/images/CASH.png'} className={heroStyles.cash}/>
+          <img alt='app' src={'/assets/images/APP.png'} className={heroStyles.app}/>
+          <img alt='phone' src={'/assets/images/intro-phone 1.png'} className={heroStyles.mobile}/>
         </div>
         <FixedFooter heroSection={true}/>
-        <img src={'./assets/images/intro-pillar 1.png'} className={heroStyles.pillar}/>
+        <img alt='pillar' src={'./assets/images/intro-pillar 1.png'} className={heroStyles.pillar}/>
     </section>
   )
 }
