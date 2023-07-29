@@ -32,6 +32,7 @@ function InvestSection() {
       </div>
       <div className={investStyles.footer}>
         <img src={"/assets/images/investing-graph-1.png"}  className={investStyles.leftImage}/>
+        <img src={"/assets/images/investing-graph-2.png"}  className={investStyles.graph}/>
         
         <img src={"/assets/images/investing-graph-3 1.png"} className={investStyles.rightImage}/>
       </div>

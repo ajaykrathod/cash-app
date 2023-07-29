@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
     overflow: hidden;
     background: #00D54B;
     background-image: url('/public/assets/images/lines.png');
@@ -14,9 +13,9 @@
 
 .info {
     width: 100vw;
-    height: 35vh;
+    height: 40vh;
     text-align: center;
-    padding-top: 20vh;
+    padding-top: 15vh;
 }
 
 .text {
@@ -24,7 +23,7 @@
     justify-content: space-between;
     width: 80vw;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
 .block {
@@ -36,7 +35,8 @@
 .block > h2 {
     font-family: 'Agrandir';
     text-align: start;
-    font-size: 22px;
+    font-size: 1.3rem;
+    margin: 0;
     font-style: normal;
     font-weight: 800;
     line-height: 40px; /* 181.818% */
@@ -45,7 +45,7 @@
 .block > p {
     font-family: 'Mulish', sans-serif;
     /* font-family: 'VT323', monospace; */
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 137.5% */
@@ -59,6 +59,7 @@
     font-style: normal;
     font-weight: 800;
     margin: 0;
+    margin-bottom: 10vh;
     /* line-height: 40px; 100% */
 }
 
@@ -83,11 +84,50 @@
     width: 45vw;
 }
 
+.graph {
+    position: absolute;
+    right: 0;
+    bottom: 35vh;
+    
+}
+
 .imageContainer {
     position: relative;
-    bottom: 20vh;
+    bottom: 30vh;
 }
 
 .imageContainer > *:first-child {
     margin-right: 5vw;
+}
+
+
+@media screen and (max-width:1000px) {
+    .info {
+        padding-top: 5vh;
+        height: 50vh;
+    }
+    .text {
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+    .text {
+        width: 90vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .imageContainer {
+        position: static;
+    }
+    .footer {
+        height: 50vh;
+    }
 }

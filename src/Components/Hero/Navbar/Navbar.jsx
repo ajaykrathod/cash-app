@@ -1,10 +1,19 @@
 import React from 'react'
-import navbarStyles from './Navbar.module.css'
+import './Navbar.css'
 function Navbar() {
+  const toggleMenu = (e) => {
+      const navbarList = document.getElementById('navbarList');
+    navbarList.classList.toggle('active');
+  }
   return (
-    <nav className={navbarStyles.navbar}>
-          <img src={'./logo.svg'} className={navbarStyles.logo}/>
-          <ul className={navbarStyles.navList}>
+    <nav className={"navbar"}>
+          <img src={'./logo.svg'} className={"logo"}/>
+          <div className={"navbarToggle"} onClick={toggleMenu}>
+            <div className={"bar"}></div>
+            <div className={"bar"}></div>
+            <div className={"bar"}></div>
+          </div>
+          <ul className={"navList"} id='navbarList'>
             <li>
               <a href="">SIGN IN</a>
             </li>
@@ -33,7 +42,7 @@ function Navbar() {
               <a href="">CODEBLOG</a>
             </li>
           </ul>
-          <img src={'./eyeButton.svg'} className={navbarStyles.logo}/>
+          <img src={'./eyeButton.svg'} className={"eye"}/>
         </nav>
   )
 }

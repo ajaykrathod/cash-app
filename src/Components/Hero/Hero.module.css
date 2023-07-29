@@ -26,40 +26,44 @@
     position: absolute;
     bottom: 0;
     z-index: 1;
-    right: 30vw;
+    right: 18vw;
 }
 
 .stair {
     position: absolute;
     right: 10vw;
-    top: 10vh;
+    top: 8vh;
+    width: 15vw;
+    height: 35vh;
 }
 
 .heroHead {
     text-align: center;
     margin: 0;
     font-family: 'Agrandir';
-    font-size:13.5em;
+    font-size:15.6em;
     letter-spacing: -20px;
     text-transform: uppercase;
 }
 
 .text {
-    margin: 11.7vh 3.3vw 0 0;
+    margin: 11.6vh 1.5vw 0 0;
     padding: 0;
     z-index:4;
 }
 
 .mobile {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 36.30vw;
+    width: 27.3%;
+    height: 66vh;
     z-index: 0;
 }
 
 .app {
-    margin: -11.8vh 0 0 1vw;
+    letter-spacing: -20px;
+    margin: -13.6vh 0 0 1vw;
     padding: 0;
 }
 
