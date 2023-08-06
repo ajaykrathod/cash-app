@@ -13,8 +13,8 @@
     position: absolute;
     top: 35%;
     left: 50%;
-    width: 50vw;
-    height: 60vh;
+    width: 55vw;
+    height: 55vh;
     transform: translate(-55%, -40%);
     /* z-index: 2; */
 }
@@ -28,7 +28,7 @@
 .infoSection {
     width: 25vw;
     height: 20vh;
-    margin: 20vh 0 0 10vw;
+    margin: 15vh 0 0 10vw;
     text-align: start;
 }
 
@@ -38,7 +38,8 @@
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 40px; /* 100% */
+    margin: 1vh;
+
 }
 
 .infoSection > p {
@@ -50,6 +51,7 @@
     font-weight: 400;
     line-height: 22px; /* 137.5% */
     letter-spacing: 0.3px;
+    margin: 0;
 }
 
 .vector {
@@ -66,15 +68,16 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 10vw;
-    height: 35vh;
+    width: 15vw;
+    height: 60vh;
+    z-index: 7;
 }
 .paycolright {
     position: absolute;
     bottom: 5vh;
     right: 0;
     width: 55vw;
-    height: 45vh;
+    height: 75vh;
     z-index: 1;
 }
 
@@ -83,65 +86,83 @@
     bottom: 0;
     right: 20vw;
     width: 55vw;
-    height: 40vh;
+    height: 60vh;
     z-index: 2;
 }
 
 .small {
     position: absolute;
-    bottom: 10vh;
-    left: 20vw;
-    width: 12vw;
+    bottom: 8vh;
+    left: 22vw;
+    width: 10vw;
     height: 20vh;
     z-index: 0;
 }
 .medium {
     position: absolute;
-    left: 10vw;
+    left: 13vw;
     bottom: 5vh;
-    width: 17vw;
-    height: 30vh;
+    width: 13vw;
+    height: 35vh;
     z-index: 1;
 }
 .mediumCenter {
     position: absolute;
-    left: 35vw;
-    width: 15vw;
-    height: 30vh;
-    bottom:3vh;
+    left: 37vw;
+    width: 13vw;
+    height: 40vh;
+    bottom:5vh;
     z-index: 3;
 }
 
 .large{
     position: absolute;
     bottom: 10vh;
-    right: 35vw;
-    height: 35vh;
+    right: 38vw;
+    height: 50vh;
     z-index: 2;
-    width: 17vw;
+    width: 15vw;
 }
 
 .smallCenter {
     position: absolute;
     bottom: -7vh;
-    right:  37vw;
-    width: 15vw;
-    height: 25vh;
+    right:  40vw;
+    width: 13vw;
+    height: 30vh;
     z-index: 3;
 }
 
 .colBetween {
     position: absolute;
     right: 15vw;
-    bottom: 15vh;
-    width: 15vw;
-    height: 25vh;
+    bottom: 20vh;
+    width: 13vw;
+    height: 40vh;
     z-index: 2;
 }
 
 @media screen and (max-width:1000px) {
     .infoSection {
         margin: 10vh 0 0 10vw;
+    }
+    .small, .smallCenter, .medium, .colBetween, .mediumCenter, .large {
+        width: 17vw;
+    }
+    .small {
+        left: 20vw;
+        width: 15vw;
+    }
+    .medium {
+        left: 10vw;
+    }
+    .mediumCenter {
+        left: 35vw;
+        width: 15vw;
+    }
+    .large {
+        left: 42vw;
+        width: 20vw;
     }
 }
 @media screen and (max-width:800px) {
@@ -155,14 +176,49 @@
         width: 70vw;
         transform: translate(-50%, -30%);
     }
+    .small, .smallCenter, .medium, .colBetween, .mediumCenter, .large {
+        width: 20vw;
+        height: 40vh;
+    }
+    .small {
+        left: 16vw;
+        width: 17vw;
+        height: 15vh;
+    }
+    .medium {
+        left: 5vw;
+        height: 25vh;
+    }
+    .mediumCenter {
+        left: 33vw;
+        width: 20vw;
+        height: 30vh;
+    }
+    .smallCenter {
+        right: 35vw;
+        height: 30vh;
+    }
+    .colBetween {
+        right: 12vw;
+        bottom: 25vh;
+        height: 30vh;
+    }
+    .paycolbottom {
+        right: 15vw;
+    }
+    .large {
+        left: 42vw;
+        width: 25vw;
+    }
 }
 
 
 @media screen and (max-width:550px) {
     .infoSection {
-        width: 40vw;
-        margin: 2vh 0 0 10vw;
+        width: 32vw;
+        margin: 2vh 0 0 3vw;
     }
+    
     .upper {
         height: 60vh;
     }
@@ -170,7 +226,53 @@
         height: 60vh;
     }
     .mobile {
-        width: 110vw;
-        transform: translate(-35%, -40%);
+        width: 100vw;
+        height: 55vh;
+        transform: translate(-53%, -35%);
+    }
+    .small, .smallCenter, .medium, .colBetween, .mediumCenter, .large {
+        width: 25vw;
+        height: 40vh;
+    }
+    .small {
+        left: 13vw;
+        width: 20vw;
+        height: 15vh;
+        z-index: 5;
+    }
+    .medium {
+        left: 2vw;
+        height: 25vh;
+        z-index: 6;
+    }
+    .mediumCenter {
+        left: 22vw;
+        width: 27vw;
+        height: 30vh;
+    }
+    .smallCenter {
+        right: 35vw;
+        height: 25vh;
+        width: 27vw;
+    }
+    .colBetween {
+        right: 15vw;
+        bottom: 25vh;
+        height: 30vh;
+    }
+    .paycolbottom {
+        right: 18vw;
+        width: 70vw;
+    }
+    .paycol {
+        width: 25vw;
+        height: 55vh;
+    }
+    .paycolright {
+        width: 70vw;
+    }
+    .large {
+        left: 30vw;
+        width: 35vw;
     }
 }

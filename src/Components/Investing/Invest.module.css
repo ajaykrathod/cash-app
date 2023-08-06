@@ -48,6 +48,7 @@
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
+    margin: 0;
     line-height: 22px; /* 137.5% */
     letter-spacing: 0.3px;
 }
@@ -117,7 +118,7 @@
 
 .imageContainer {
     position: relative;
-    bottom: 30vh;
+    bottom: 25vh;
     z-index: 4;
 }
 
@@ -159,9 +160,14 @@
     .block {
         width: 40vw;
     }
+    .imageContainer {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
     
     .imageContainer > img {
-        width: 30vw;
+        width: 40vw;
         height: 50vh;
     }
     .rightImage {
