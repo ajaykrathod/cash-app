@@ -52,7 +52,7 @@
 }
 
 .text {
-    margin: 19.2vh 0vw 0 26vw;
+    margin: 18.9vh 0vw 0 25.9vw;
     padding: 0;
     z-index:4;
     display: flex;
@@ -69,12 +69,12 @@
 }
 .cash {
     width: 47vw;
-    height: 21vh;
+    height: 21.5vh;
 }
 .app {
     width: 36vw;
     height: 20vh;
-    margin: 2.2vh 0 0 6vw;
+    margin: 2vh 0 0 6vw;
 }
 
 
@@ -113,18 +113,20 @@
         z-index: 5;
     }
     .text {
-        margin: 15vh 0 5vh 12vw;
+        margin: 15.2vh 0 5vh 11.4vw;
         height: 40vh;
         width: auto;
     }
     .cash {
         z-index: 4;
         width: 80vw;
+        height: 19.4vh;
     }
     .app {
         z-index: 4;
         width: 60vw;
-        margin: 1.5vh 0 0 10vw;
+        height: 18.1vh;
+        margin: 1.9vh 0 0 10.5vw;
     }
     .pillar {
         right: 10vw;
