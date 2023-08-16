@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import HeroSection from './Components/Hero/HeroSection';
 import PaymentSection from './Components/Payments/PaymentSection';
